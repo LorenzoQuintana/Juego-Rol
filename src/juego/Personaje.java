@@ -32,7 +32,7 @@ public class Personaje {
     int cuarzoMorado = 0;
     int objetoMaz2 = 0;
     int objetoCasa1 = 0;
-    int mapa = 1; //Desbloquea un nuevo destino.
+    int mapa = 0; //Desbloquea un nuevo destino.
     int montura=0; //Cada montura tiene un numero. Eso decide la probabilidad de ser emboscado.
     int ending=0; //Cuando pasa a valer 1, el bucle cruce de caminos termina y el juego finaliza.
     boolean escapar = false;
@@ -42,7 +42,7 @@ public class Personaje {
     //Se crea un personaje basico, después se rellenan sus estadisticas segun la clase elegida.
     //Esto permite poder utilizar siempre al personaje basico en combate, lo que seria imposible de tener multiples subclases partiendo de "Personaje".
     public void rellenarGuerrero() {
-        vida = 1200;
+        vida = 120;
         mana = -1000; //Los personajes que no pueden utilizar magia tienen un mana muy bajo para evitarselo.
         armadura = 0;
         dañoBasico = 15;
